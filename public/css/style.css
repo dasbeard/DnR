@@ -4,6 +4,7 @@
     --color2: #4C8DCA;
     --color3: #78E5EB;
     --color4: #F5F0F2;
+    --color5: #DBD7D9;    
     --color-alert: #E12D53;
 }
 
@@ -11,26 +12,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
+/* 
 body{
-    background-image: url("/assets/bg2-min.png");
+    background-image: url("../assets/bg2-min.png");
     background-repeat: round;
     background-position: center;
     width: 100%;
     height: 100%;
     padding: 10px 25px;
-    /* z-index: 0; */
+    z-index: 0 !important;
 }
+*/
 
 .background{
-    border-radius: 6px 6px 6px 6px;
-    -moz-border-radius: 6px 6px 6px 6px;
-    -webkit-border-radius: 6px 6px 6px 6px;
     background-color: var(--color4);
+    box-shadow: inset 0px 0px 80px 0px var(--color5);
     padding: 0;
     z-index: 1 !important;
     min-height: 98.5vh;
-}
+} 
+
+
 
 /* ===== Navigation Bar ===== */
 .navbar{
