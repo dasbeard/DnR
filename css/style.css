@@ -11,7 +11,7 @@
 
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;w
 }
 
 
@@ -64,6 +64,12 @@
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
+
+
+#mainImag p{
+    position: relative;
+    top: -300px;
+} 
 /* =====^^^ Main Content ^^^===== */
 
 
