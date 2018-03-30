@@ -47,29 +47,35 @@
 /* ===== Main Content ===== */
 #mainImg{
     min-height: 80vh;
-    padding: 0 4rem;    
+    /* padding: 0 4rem;     */
     margin-bottom: 4rem;
 }
 
-#mainImg h2{
+/* #mainImg h2{
     font-family: 'Farsan', cursive;
     text-align: center;
+} */
+
+
+#mainImg div{
+    outline: 1px solid red;
+    margin: 45px;
+    height: 65vh;
+    overflow: hidden;
+
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
 }
 
-#mainImg img{
-    margin: 15px 0;
-    width: 70%;
-    height: 70%;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
+#mainImg img {
+    /* height: 1080px;
+    width: 1500px; */
+    /* margin: -300px 0 0 0; */
+     object-fit: cover;
 }
 
 
-#mainImag p{
-    position: relative;
-    top: -300px;
-} 
 /* =====^^^ Main Content ^^^===== */
 
 
@@ -357,11 +363,11 @@ figure:hover .clickMe{
     #mainImg h2{
         font-size: 1em;
     }
-
+/* 
     #mainImg img{
         max-width: 80%;
         max-height: 80%;
-    }
+    } */
     
     .modalTop ul li{
         font-size: .8rem;    
