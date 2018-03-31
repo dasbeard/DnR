@@ -1,6 +1,18 @@
 // Google API Key:  AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
 
 $(document).ready(function(){
+    $('.img-holder').imageScroll({
+        touch: false,
+    });
+
+
+    // =-=-=-=-=-=-=-= Not Working Properly =-=-=-=-=-=-=-=
+    // var touch = Modernizr.touch;
+    // $('.img-holder').imageScroll({
+    //     imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+    //     touch: touch
+    // });
+
 
     /*======= Navigation Scroll ========*/
     $("a[href='#beds']").click(function() {
@@ -43,8 +55,7 @@ $(document).ready(function(){
        $('#back-to-top').tooltip('show');
 
        
-       
-       
+     
        
 
         
