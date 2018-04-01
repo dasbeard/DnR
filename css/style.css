@@ -3,7 +3,8 @@
     --color1: #17468A;
     --color2: #4C8DCA;
     --color3: #78E5EB;
-    --color4: #F5F0F2;
+    /* --color4: #F5F0F2; */
+    --color4: #F0F0F0;
     --color5: #DBD7D9;    
     --color-alert: #E12D53;
 }
@@ -14,10 +15,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .background{
     background-color: var(--color4);
-    box-shadow: inset 0px 0px 80px 0px var(--color5);
+    /* box-shadow: inset 0px 18px 50px -5px var(--color5); */
     padding: 0;
     z-index: 0 !important;
     min-height: 98.5vh;
@@ -211,7 +211,7 @@ figure:hover .clickMe{
 #aboutUs{
     padding: 0 4rem;
     text-align: justify;
-    margin-bottom: 4rem;        
+    /* margin-bottom: 4rem;         */
 }
 
 #aboutUs .aboutUs p{
@@ -220,9 +220,42 @@ figure:hover .clickMe{
 /* ==========^^^ About Us ^^^========== */
 
 
+
+
+
+/* ============ Triange Divider ============ */
+
+.divider{
+    height: 5rem;
+    display: flex;
+    background-color: var(--color5);
+}
+
+.divider svg{
+    color: var(--color4);
+}
+
+.divider polygon{
+    fill: var(--color4);
+    /* fill: #ffffff; */
+    /* stroke: var(--color2); */
+    /* stroke-width:1; */
+}
+
+
+/* ==========^^^ Triange Divider ^^^========== */
+
+
+
+
+
+
+
+
 /* ============ Contact Us ============ */
 #contactUs{
-    padding: 0 4rem;
+    padding: 1.2rem 4rem 0;
+    background-color: var(--color5);
 }
 
 #contactUs .contactInfo{
@@ -331,8 +364,8 @@ figure:hover .clickMe{
 
 
 @media (max-width: 991.98px) {
-    .navbar{
-        /* height: 110px; */
+    .background{
+        /* background-color: #ffffff; */
     }
 
     .navbar-brand img{
@@ -379,9 +412,6 @@ figure:hover .clickMe{
         padding-top: 4%;
     }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=- */
-
-
     .sectionTitle h2{
         font-size: 1.7rem;
     }
@@ -400,13 +430,24 @@ figure:hover .clickMe{
         font-size: .45em;        
     }
 
-    #aboutUs .aboutUs{
-        /* padding: 0 1.6rem; */
-    }
-
     #aboutUs .aboutUs h5{
         font-size: 1rem;                
     }
+
+    .divider{
+        height: 2rem;
+        display: flex;
+    }
+    
+    /* .divider polygon{
+        fill: var(--color4);
+    } */
+
+
+
+
+
+
 
     #contactUs .contactInfo h5{
         font-size: 1rem;   
@@ -421,6 +462,10 @@ figure:hover .clickMe{
         top: 0;
         font-size: 1rem;    
     }
+
+    #contactUs iframe{
+        height: 15rem;
+    }
 }
 
 
@@ -433,12 +478,7 @@ figure:hover .clickMe{
     #mainImg h2{
         font-size: 2.3rem;
     }
-/* 
-    #mainImg img{
-        max-width: 80%;
-        max-height: 80%;
-    } */
-    
+   
     .modalTop ul li{
         font-size: .8rem;    
     }      

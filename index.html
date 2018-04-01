@@ -67,9 +67,10 @@
         
 
         <div id="mainImg" class="container-fluid justify-content-center">
-            <div class="row parallaxDiv justify-content-center">
-                <img class="col img-holder" data-image="./assets/stock-mattress.png" alt="Temp Image" >
+            <div class="row">
+                <img class="img-holder" data-image="./assets/stock-mattress.png" data-image-mobile="./assets/Temp.jpeg" data-width="1500" data-height="996" alt="Temp Image" >
             </div>
+
             <h2>Where Quality Comfort and Dreams are made</h2>
             <h4>At Dream and Rest Inc. your sleep is priceless</h4>
         </div>
@@ -179,7 +180,6 @@
 
         </div>
 
-
         <div class="container-fluid" id="mattressTips">
             <div class="sectionTitle">
                 <h2>Mattress Tips</h2>
@@ -199,8 +199,6 @@
 
         </div>
 
-
-
         <div class="container-fluid" id="aboutUs">
             <div class="sectionTitle">
                 <h2>About Us</h2>
@@ -219,43 +217,58 @@
             </div>
         </div>
 
+    </div>
 
 
-        <div class="container-fluid" id="contactUs">
-            <div class="sectionTitle">
-                <h2>Contact us</h2>
+
+
+    <div class="divider">
+        <!-- <div class="tFirst"></div>
+        <div class="tSecond"></div> -->
+        <svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" >
+                <!-- <polygon points="0,0 50,100 50,00" />
+                <polygon points="100,0 50,100 50,0" />   -->
+                <polygon points="0,0 50,100 50,100 100,0"/>
+        </svg>
+    </div>
+
+
+
+    <div class="container-fluid" id="contactUs">
+        <div class="sectionTitle">
+            <h2>Contact us</h2>
+        </div>
+
+        
+        <div class="row contactInfo justify-content-center">
+
+            <div class="col-md order-md-2 ">
+                <p><a class="emailUs" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p>
             </div>
-            
-            <div class="row contactInfo justify-content-center">
-
-                <div class="col-md order-md-2 ">
-                    <p><a class="emailUs" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p>
-                </div>
-                <div class="col-md order-md-1">
-                    <h5>Phone</h5>
-                    <p>(313) 753-3700</p>
-                    <p>(313) 753-3005</p>
-                </div>
-                <div class="col-md order-md-3">
-                    <h5>Hours of Operation</h5>
-                    <p>Mon - Sat 10:00am - 7:00pm</p>
-                    <p>Sun 10:00am - 6:00pm</p>
-                </div>
-
+            <div class="col-md order-md-1">
+                <h5>Phone</h5>
+                <p>(313) 753-3700</p>
+                <p>(313) 753-3005</p>
             </div>
-
-            <div class="row justify-content-center">
-
-                <iframe class="col" frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
-                    &q=Dream+and+Rest+Mattress+5901+S+Vermont+Ave,+Los+Angeles+CA
-                    &zoom=15" allowfullscreen>
-                </iframe>
+            <div class="col-md order-md-3">
+                <h5>Hours of Operation</h5>
+                <p>Mon - Sat 10:00am - 7:00pm</p>
+                <p>Sun 10:00am - 6:00pm</p>
             </div>
 
         </div>
 
+        <div class="row justify-content-center">
 
+            <iframe class="col" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
+                &q=Dream+and+Rest+Mattress+5901+S+Vermont+Ave,+Los+Angeles+CA
+                &zoom=15" allowfullscreen>
+            </iframe>
+        </div>
+        
+    </div>
+        
 
         <a id="back-to-top" href="#" class="btn btn-secondary  back-to-top" role="button" ><img src="./assets/glyphicons-214-arrow-up.png" alt=""> </a>
 
@@ -301,7 +314,6 @@
             </div>
         </div>
 
-    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
