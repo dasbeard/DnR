@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116935634-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116935634-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +27,7 @@
 
 
     <!-- ============= Google Fonts ============== -->
-    <link href="https://fonts.googleapis.com/css?family=Farsan|Montserrat|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Farsan|Montserrat|Pacifico|Dancing+Script|Kaushan+Script" rel="stylesheet">
     <!-- ^^^^^======== Google Fonts ========^^^^^^ -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -64,13 +74,16 @@
                 </ul>
             </div>
         </nav>
-
-        <div id="mainImg" class="container-fluid">
-            <h2 class="row justify-content-center" >Where quality, comfort, and dreams are made. Trusted by thousands of satisfied customers.</h2>
-            <h2 class="row justify-content-center" >At Dream and Rest Inc. your sleep is priceless.</h2>
-            <div class="row justify-content-center">
-                <img src="./assets/Temp.jpeg" alt="Temp Image">
+        
+        <!-- class="container-fluid justify-content-center" -->
+        <div id="mainImg">
+            
+            <div class="imgText">
+                <h2>Where Quality Comfort and Dreams are made</h2>
+                <h4>At Dream and Rest Inc. your sleep is priceless</h4>
             </div>
+
+            <div class="img-holder" data-image="./assets/mattress-scale.png" data-width="1500" data-height="996"></div>
 
         </div>
 
@@ -135,19 +148,19 @@
             </div>                
                 
             <div class="row mattCollection justify-content-center">
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="I-Gel" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="I-Gel" >
                     <img src="./assets/Beds/I-Gel.png" title="I-Gel"  alt="Dream and Rest I-Gel Mattress" >
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>I-Gel</figcaption>
                 </figure>
                 
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="Malibu" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Malibu" >
                     <img src="./assets/Beds/Malibu.png" title="Malibu" alt="Dream and Rest Malibu Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>                  
                     <figcaption>Malibu</figcaption>
                 </figure>
                 
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="Siesta" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Siesta" >
                     <img src="./assets/Beds/Siesta.png" title="Siesta" alt="Dream and Rest Siesta Mattress" >
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Siesta</figcaption>
@@ -159,7 +172,6 @@
                     <figcaption>Institution</figcaption>
                 </figure>
             </div>
-
 
 
             <div class="row mattCollection justify-content-center">
@@ -178,7 +190,6 @@
             </div>
 
         </div>
-
 
         <div class="container-fluid" id="mattressTips">
             <div class="sectionTitle">
@@ -199,8 +210,6 @@
 
         </div>
 
-
-
         <div class="container-fluid" id="aboutUs">
             <div class="sectionTitle">
                 <h2>About Us</h2>
@@ -219,45 +228,79 @@
             </div>
         </div>
 
+    </div>
 
 
-        <div class="container-fluid" id="contactUs">
-            <div class="sectionTitle">
-                <h2>Contact us</h2>
+
+
+    <div class="divider">
+        <svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" >
+            <polygon points="0,0 50,100 50,100 100,0"/>
+        </svg>
+    </div>
+
+
+
+    <div class="container-fluid" id="contactUs">
+        <div class="sectionTitle">
+            <h2>Contact us <a href="https://www.facebook.com/DreamAndRestMattress/" title="Like us on Facebook" target="_blank">
+                <img src="./assets/if_square-facebook_317727.svg" 
+                onmouseover="this.src='./assets/facebook-icon-grey.svg'"
+                onmouseout="this.src='./assets/if_square-facebook_317727.svg'"
+                border="0" alt=""/>
+            </a> </h2>
+        </div>
+
+        
+        
+        <div class="row contactInfo ">
+
+            <div class="col-md order-md-2 ">
+                <p><a class="emailUs d-sm-none" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p>
+                <!-- <p><a class="emailUs visable-lg d-lg-none d-xl-block" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p> -->
+
+                <button class="btn emailUs copyTrigger d-none d-sm-block" data-clipboard-text="catyp_27@yahoo.com">
+                        Email Us
+                </button>
+
+                <div class="hide"></div>
+
+
             </div>
-            
-            <div class="row contactInfo justify-content-center">
 
-                <div class="col-md order-md-2 ">
-                    <p><a class="emailUs" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p>
-                </div>
-                <div class="col-md order-md-1">
-                    <h5>Phone</h5>
-                    <p>(313) 753-3700</p>
-                    <p>(313) 753-3005</p>
-                </div>
-                <div class="col-md order-md-3">
-                    <h5>Hours of Operation</h5>
-                    <p>Mon - Sat 10:00am - 7:00pm</p>
-                    <p>Sun 10:00am - 6:00pm</p>
-                </div>
-
+            <div class="col-md order-md-1">
+                <h5>Phone</h5>
+                <p>(313) 753-3700</p>
+                <p>(313) 753-3005</p>
             </div>
-
-            <div class="row justify-content-center">
-
-                <iframe class="col" frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
-                    &q=Dream+and+Rest+Mattress+730+E+Gage+Ave,Los+Angeles+CA
-                    &zoom=15" allowfullscreen>
-                </iframe>
+            <div class="col-md order-md-3">
+                <h5>Hours of Operation</h5>
+                <p>Mon - Sat 10:00am - 7:00pm</p>
+                <p>Sun 10:00am - 6:00pm</p>
             </div>
 
         </div>
 
+        <div class="row justify-content-center">
+
+            <iframe class="col" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
+                &q=Dream+and+Rest+Mattress+5901+S+Vermont+Ave,+Los+Angeles+CA
+                &zoom=15" allowfullscreen>
+            </iframe>
+        </div>
+        
+    </div>
+        
+
+    <div class="container-fluid" id="ABFooter">
+        <p>Designed by: <a href="https://www.abonlinemarketing.com/" target="_blank">A&B Marketing</a>
+        </p>
+    </div>    
 
 
-        <a id="back-to-top" href="#" class="btn btn-secondary  back-to-top" role="button" ><img src="./assets/glyphicons-214-arrow-up.png" alt=""> </a>
+
+    <a id="back-to-top" href="#" class="btn btn-secondary  back-to-top" role="button" ><img src="./assets/glyphicons-214-arrow-up.png" alt=""></a>
 
 
 
@@ -301,12 +344,21 @@
             </div>
         </div>
 
-    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/paralax.min.js"></script>
+    <!-- <script src="js/clipboard.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+<!-- Where quality, comfort, and dreams are made -->

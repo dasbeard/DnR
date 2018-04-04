@@ -520,6 +520,7 @@
     
     #mainImg{
         max-height: 40vh;
+        margin-bottom: 4rem;        
     }
     
     #mainImg .imgText h2{
