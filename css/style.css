@@ -112,7 +112,7 @@
 
 .sectionTitle{
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -194,6 +194,7 @@
         padding: 0 4rem;
         text-align: justify;
         /* margin-bottom: 4rem;         */
+        margin-bottom: -0.5px;
     }
 
     #aboutUs .aboutUs p{
@@ -240,6 +241,12 @@
     #contactUs .contactInfo h5{
         text-decoration: underline;
         margin-bottom: .7rem;    
+    }
+
+    #contactUs .sectionTitle h2 a{
+        position: relative;
+        top: -2px;
+        margin-left: 10px;
     }
 
     #contactUs .contactInfo p{
@@ -339,31 +346,30 @@
 
 /* ===== SB Footer ===== */
     #ABFooter{
-        height: 55px;
+        /* height: 45px; */
         margin: 0;
-        padding-top: 10px;
-        padding-bottom: -50px;
-        position: absolute;
-        bottom: 100;
-        /* top: -5.5px; */
+        /* padding-top: 10px; */
 
+        background: rgba(219,215,217,1);
+        background: -moz-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,215,217,1)), color-stop(8%, rgba(0,0,0,1)), color-stop(9%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+        background: -webkit-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(219,215,217,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd7d9', endColorstr='#000000', GradientType=0 );
         
-        background: rgba(0,0,0,0);
-        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(10%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
-        background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
-        background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 
 
-
-        
         color: var(--color5);
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: .7rem;
+    }
+
+    #ABFooter p{
+        margin-top: 20px;
     }
 
     #ABFooter a{
@@ -445,7 +451,6 @@
 
     .divider{
         height: 2rem;
-        display: flex;
     }
     
     #contactUs .contactInfo h5{
@@ -469,11 +474,6 @@
 
 
 @media(max-width: 767.98px){
-    /* #mainImg .imgText{
-        top: -11.5rem;
-    }
-     */
-    
     .modalTop ul li{
         font-size: .8rem;    
     }      
@@ -506,8 +506,9 @@
     figure:hover .clickMe{
         visibility: hidden;
     }
-
-
-
     
+    #ABFooter{
+        font-size: .6rem;
+        background: #000000;
+    }
 }
