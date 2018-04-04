@@ -49,10 +49,13 @@ $(document).ready(function(){
 
 //   -=-=-=-=-=-=-=-=-=-=-=-=-=-= Not Working on Mobile Yet -=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
+
+
+
 var touch = window.navigator.userAgent.toLowerCase().includes("mobi");
 $('.img-holder').imageScroll({
     // imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-    // touch: touch
+    touch: touch,
   });
 
 

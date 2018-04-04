@@ -47,87 +47,69 @@
 }
 /* =====^^^ Navigation Bar ^^^===== */
 
-
-
-
-
-
-
 /* ===== Main Content ===== */
-#mainImg{
-    min-height: 80vh;
-}
+    #mainImg{
+        max-height: 80vh;
+        margin-bottom: 2rem;
+    }
 
-#mainImg h2, #mainImg h4{
-    z-index: 9;
-    font-family: 'Farsan', cursive;
-    position: relative;
-    top: -22rem;
-    color: var(--color4);
-    text-shadow: 5px 5px 8px #000000;
-}
+    #mainImg .img-holder {
+        position: relative;
+        top: -160px;
+        margin: 0;
+        padding: 0;
+    }
 
-#mainImg h2{
-    padding-left: 5%;
-    font-size: 3.4rem;
-}
+    #mainImg .imgText{
+        z-index: 9;
+        max-height: 160px;
+        position: relative;
+        /* top: -27rem; */
+        font-family: 'Dancing Script', cursive;
+        color: var(--color4);
+        text-shadow: 4px 4px 15px #000000;
+        padding: 10% 5% 0 5%;
+    }
 
-#mainImg h4{
-    font-size: 1.6rem;
-    padding-top: 1.5%;
-    padding-left: 6%;
-}
+    #mainImg .imgText h2{
+        font-size: 4rem;
+    }
 
-#mainImg div{
-    margin: 0;
-    padding: 0;
-    max-height: 60vh;
-
-    border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    -webkit-border-radius: 2px 2px 2px 2px;
-}
-
-#mainImg .img-holder {
-    max-width: 80px;
-}
+    #mainImg .imgText h4{
+        font-size: 2.1rem;
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+/* =====^^^ Main Content ^^^===== */
+    
 
 .textOutline{
-    text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
+        text-shadow: 1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        1px 0px 0 #000,
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        1px 0px 0 #000,
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
 
-
-
-
-
-
-
-
-
-/* =====^^^ Main Content ^^^===== */
 .sectionTitle{
     text-align: center;
     text-decoration: underline;
@@ -138,236 +120,264 @@
 
 
 /* ===== Mattress Collection ===== */
-#beds{
-    margin-bottom: 4rem;        
-}
+    #beds{
+        margin-bottom: 4rem;        
+    }
 
-#beds .collectionTitle h2{
-    font-size: 2rem;
-}
+    /* #beds .collectionTitle h2{
+        font-size: 2rem;
+    } */
 
-#beds .mattCollection{
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0 4rem;
-}
+    #beds .mattCollection{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 5%;
+    }
 
-.mattCollection img{
-    width: 100%;
-}
+    .mattCollection img{
+        width: 100%;
+    }
 
-.mattCollection:last-of-type{
-    padding-bottom: 25px;
-}
+    .mattCollection:last-of-type{
+        padding-bottom: 25px;
+    }
 
-figure:hover img, figure:hover figcaption{
-    filter: blur(2px);
-    cursor: pointer;
-}
+    figure:hover img, figure:hover figcaption{
+        filter: blur(2px);
+        cursor: pointer;
+    }
 
-figure .clickMe{
-    visibility: hidden;
-    height: 0;
-}
+    figure .clickMe{
+        visibility: hidden;
+        height: 0;
+    }
 
-figure:hover .clickMe{
-    visibility: visible;
-    filter: blur(0);
-    position: relative;
-    top: -60%;
-    font-size: 1.3rem;
-    color: #f2f2f2;
-    text-shadow: 3px 3px 3px #111111;
-}
+    figure:hover .clickMe{
+        visibility: visible;
+        filter: blur(0);
+        position: relative;
+        top: -60%;
+        font-size: 1.3rem;
+        color: #f2f2f2;
+        text-shadow: 3px 3px 3px #111111;
+    }
 /* =====^^^ Mattress Collection ^^^===== */
 
 
 /* ========== Mattress Tips ========== */
-#mattressTips{
-    padding: 0 4rem;
-    margin-bottom: 4rem;        
-}
+    #mattressTips{
+        padding: 0 4rem;
+        margin-bottom: 3rem;        
+    }
 
-#mattressTips .mattressTips h5{
-    font-size: 1.15rem;
-    text-align: center;
-    margin-bottom: 1.5rem;    
-}
+    #mattressTips .mattressTips h5{
+        font-size: 1.15rem;
+        text-align: center;
+        margin-bottom: 1rem;    
+    }
 
-#mattressTips .mattressTips ul{
-    margin-bottom: 3rem;
-    padding-left: 5px;
-    text-align: justify;   
-}
+    #mattressTips .mattressTips ul{
+        /* margin-bottom: 3rem; */
+        padding-left: 5px;
+        text-align: justify;   
+    }
 
-#mattressTips .mattressTips ul li{
-    font-size: .9rem;
-    margin-bottom: .5em;
-}
+    #mattressTips .mattressTips ul li{
+        font-size: .9rem;
+        margin-top: .5em;
+    }
 /* ==========^^^ Mattress Tips ^^^========== */
 
 
 /* ========== About Us ========== */
-#aboutUs{
-    padding: 0 4rem;
-    text-align: justify;
-    /* margin-bottom: 4rem;         */
-}
+    #aboutUs{
+        padding: 0 4rem;
+        text-align: justify;
+        /* margin-bottom: 4rem;         */
+    }
 
-#aboutUs .aboutUs p{
-    font-size: .9rem;
-}
+    #aboutUs .aboutUs p{
+        font-size: .9rem;
+    }
 /* ==========^^^ About Us ^^^========== */
 
 
-
-
-
 /* ============ Triange Divider ============ */
+    .divider{
+        height: 5rem;
+        display: flex;
+        background-color: var(--color5);
+        position: relative;
+        /* top: -1.5px; */
+    }
 
-.divider{
-    height: 5rem;
-    display: flex;
-    background-color: var(--color5);
-}
+    .divider svg{
+        /* color: var(--color4); */
+    }
 
-.divider svg{
-    color: var(--color4);
-}
-
-.divider polygon{
-    fill: var(--color4);
-    /* fill: #ffffff; */
-    /* stroke: var(--color2); */
-    /* stroke-width:1; */
-}
+    .divider polygon{
+        fill: var(--color4);
+        stroke: var(--color4);
+        stroke-width:0;
+    }
 
 
 /* ==========^^^ Triange Divider ^^^========== */
 
 
-
-
-
-
-
-
 /* ============ Contact Us ============ */
-#contactUs{
-    padding: 1.2rem 4rem 0;
-    background-color: var(--color5);
-}
+    #contactUs{
+        padding: 1.5rem 4rem 0;
+        background-color: var(--color5);
+        position: relative;
+        /* top: -1.5px; */
+    }
 
-#contactUs .contactInfo{
-    text-align: center;
-}
+    #contactUs .contactInfo{
+        text-align: center;
+    }
 
-#contactUs .contactInfo h5{
-    text-decoration: underline;
-    margin-bottom: .7rem;    
-}
+    #contactUs .contactInfo h5{
+        text-decoration: underline;
+        margin-bottom: .7rem;    
+    }
 
-#contactUs .contactInfo p{
-    margin-bottom: .2rem;
-}
+    #contactUs .contactInfo p{
+        margin-bottom: .2rem;
+    }
 
-#contactUs .contactInfo .emailUs{
-    position: relative;
-    top: 2.5rem;
-}
+    #contactUs .contactInfo .emailUs{
+        position: relative;
+        top: 2.5rem;
+    }
 
-#contactUs iframe{
-    height: 25rem;
-    margin-top: 1rem;        
-    margin-bottom: 2.5rem;    
-    padding: 0;
-    border: 1px solid #cccccc;
-    border-radius: 6px 6px 6px 6px;
-    -moz-border-radius: 6px 6px 6px 6px;
-    -webkit-border-radius: 6px 6px 6px 6px;
-}
+    #contactUs iframe{
+        height: 25rem;
+        margin-top: 1rem;        
+        margin-bottom: 2.5rem;    
+        padding: 0;
+        border: 1px solid #cccccc;
+        border-radius: 6px 6px 6px 6px;
+        -moz-border-radius: 6px 6px 6px 6px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+    }
 /* ==========^^^ Contact Us ^^^========== */
 
 
 /* ===== Back To Top Button ===== */
-.back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 35px;
-    right: 25px;
-    display:none;
-    z-index: 999;
-    background-color: #F5F0F2;
-    box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
-    -webkit-box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
-    -moz-box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
-    border: none;
-    padding: 10px 14px;
-    border-radius: 36px 36px 36px 36px;
-    -moz-border-radius: 36px 36px 36px 36px;
-    -webkit-border-radius: 36px 36px 36px 36px;
-}
+    .back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 35px;
+        right: 25px;
+        display:none;
+        z-index: 999;
+        background-color: #F5F0F2;
+        box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
+        -webkit-box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
+        -moz-box-shadow: 5px 6px 25px 1px rgba(0,0,0,0.65);
+        border: none;
+        padding: 10px 14px;
+        border-radius: 36px 36px 36px 36px;
+        -moz-border-radius: 36px 36px 36px 36px;
+        -webkit-border-radius: 36px 36px 36px 36px;
+    }
 /* ==========^^^ Back To Top Button ^^^========== */
 
 
-/* ===== Matteress Modal ===== */
-#mattressModal .modal-header h4{
-    width: 100%;
-    text-align: center;
-}
+/* ===== Mattress Modal ===== */
+    #mattressModal .modal-header h4{
+        width: 100%;
+        text-align: center;
+    }
 
-#mattressModal .modalTop{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 10px;
-}
+    #mattressModal .modalTop{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10px;
+    }
 
-#mattressModal .modalTop ul li:last-child{
-    margin-bottom: 0;
-}
+    #mattressModal .modalTop ul li:last-child{
+        margin-bottom: 0;
+    }
 
-#mattressModal .modalTop ul{
-    padding-left: 20px;
-    margin-bottom: 8px;    
-}
+    #mattressModal .modalTop ul{
+        padding-left: 20px;
+        margin-bottom: 8px;    
+    }
 
-#mattressModal .modalTop ul li{
-    margin-bottom: 10px;
-    font-size: 1rem;    
-}
+    #mattressModal .modalTop ul li{
+        margin-bottom: 10px;
+        font-size: 1rem;    
+    }
 
-#mattressModal table{
-    font-size: .8rem;
-}
+    #mattressModal table{
+        font-size: .8rem;
+    }
 
-#mattressModal table tr td:first-of-type{
-    min-width: 200px;
-}
+    #mattressModal table tr td:first-of-type{
+        min-width: 200px;
+    }
 
-#mattressModal .modal-footer{
-    padding-top: 5px;    
-}
+    #mattressModal .modal-footer{
+        padding-top: 5px;    
+    }
 
-#mattressModal .modal-footer p{
-    font-size: .55em;
-    text-align: justify;
-    margin: 0 3% 0 2.5%;
-}
+    #mattressModal .modal-footer p{
+        font-size: .55em;
+        text-align: justify;
+        margin: 0 3% 0 2.5%;
+    }
 
-#mattressModal .modalTop img{
-    width: 100%;
-    height: 100%;
-}
+    #mattressModal .modalTop img{
+        width: 100%;
+        height: 100%;
+    }
 /* =====^^^ Mattress Modal ^^^===== */
+
+
+
+/* ===== SB Footer ===== */
+    #ABFooter{
+        height: 55px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: -50px;
+        position: absolute;
+        bottom: 100;
+        /* top: -5.5px; */
+
+        
+        background: rgba(0,0,0,0);
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(10%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+
+
+
+        
+        color: var(--color5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ABFooter a{
+        color: var(--color4);        
+    }
+
+
+/* =====^^^ SB Footer ^^^===== */
+
 
 
 
 
 @media (max-width: 991.98px) {
-    .background{
-        /* background-color: #ffffff; */
-    }
-
     .navbar-brand img{
         height: 115px;
         margin-top: 1px;
@@ -379,7 +389,8 @@ figure:hover .clickMe{
         opacity: .85;
         z-index: 9999 !important;
         position: absolute;
-        top: 137px;
+        top: 107%;
+        /* top: 137px; */
         left: 5px;
         width: 65%;
         border-radius: 5px;
@@ -392,33 +403,30 @@ figure:hover .clickMe{
         color: #ffffff !important;
     }
 
-    #mainImg{
-        margin-top: 1rem;
-        padding: 0 1.6rem;   
-        min-height: auto;
-    }
-
-    #mainImg div{
-        max-height: 50vh;    
-    }
-
-    #mainImg h2, #mainImg h4{
-        position: relative;
-        top: -18rem;
-    }
-
-    #mainImg h4{
-        font-size: 1.2rem;
-        padding-top: 4%;
-    }
-
-    .sectionTitle h2{
-        font-size: 1.7rem;
+    #beds{
+        margin-bottom: 2rem;        
     }
     
-    #beds .mattCollection{
-        margin-bottom: 10px;       
-        padding: 0 1.6rem;        
+    #mattressTips{
+        margin-bottom: 2rem;        
+    }
+    
+    #mainImg .imgText{
+        padding: 15% 5% 0 5%;
+    }
+    
+    #mainImg .imgText h2{
+        font-size: 4rem;
+    }
+    
+    #mainImg .imgText h4{
+        font-size: 2.1rem;
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+    
+    .sectionTitle h2{
+        font-size: 1.7rem;
     }
     
     figcaption{
@@ -427,7 +435,8 @@ figure:hover .clickMe{
 
     #mattressModal .modal-footer p{
         margin: 2% 3% 2% 2.5%;
-        font-size: .45em;        
+        font-size: .45em;    
+        max-width: 90vw;    
     }
 
     #aboutUs .aboutUs h5{
@@ -439,16 +448,6 @@ figure:hover .clickMe{
         display: flex;
     }
     
-    /* .divider polygon{
-        fill: var(--color4);
-    } */
-
-
-
-
-
-
-
     #contactUs .contactInfo h5{
         font-size: 1rem;   
     }
@@ -470,27 +469,45 @@ figure:hover .clickMe{
 
 
 @media(max-width: 767.98px){
-    .navbar-brand img{
-        margin-top: 10px;
-        height: 115px;
+    /* #mainImg .imgText{
+        top: -11.5rem;
     }
-
-    #mainImg h2{
-        font-size: 2.3rem;
-    }
-   
+     */
+    
     .modalTop ul li{
         font-size: .8rem;    
     }      
 }
-
-
+    
+    
 @media (max-width: 576px) {
     .navbar-brand img{
         height: 88px;
     }
     
+    #mainImg{
+        max-height: 40vh;
+    }
+    
+    #mainImg .imgText h2{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    
+    #mainImg .imgText h4{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    
+    #beds .mattCollection{
+       padding: 0 3%;
+    }
+
     figure:hover .clickMe{
         visibility: hidden;
     }
+
+
+
+    
 }

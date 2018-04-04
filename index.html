@@ -17,7 +17,7 @@
 
 
     <!-- ============= Google Fonts ============== -->
-    <link href="https://fonts.googleapis.com/css?family=Farsan|Montserrat|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Farsan|Montserrat|Pacifico|Dancing+Script|Kaushan+Script" rel="stylesheet">
     <!-- ^^^^^======== Google Fonts ========^^^^^^ -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -65,14 +65,16 @@
             </div>
         </nav>
         
-
-        <div id="mainImg" class="container-fluid justify-content-center">
-            <div class="row">
-                <img class="img-holder" data-image="./assets/stock-mattress.png" data-image-mobile="./assets/Temp.jpeg" data-width="1500" data-height="996" alt="Temp Image" >
+        <!-- class="container-fluid justify-content-center" -->
+        <div id="mainImg">
+            
+            <div class="imgText">
+                <h2>Where Quality Comfort and Dreams are made</h2>
+                <h4>At Dream and Rest Inc. your sleep is priceless</h4>
             </div>
 
-            <h2>Where Quality Comfort and Dreams are made</h2>
-            <h4>At Dream and Rest Inc. your sleep is priceless</h4>
+            <div class="img-holder" data-image="./assets/stock-mattress.png" data-width="1500" data-height="996"></div>
+
         </div>
 
 
@@ -136,19 +138,19 @@
             </div>                
                 
             <div class="row mattCollection justify-content-center">
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="I-Gel" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="I-Gel" >
                     <img src="./assets/Beds/I-Gel.png" title="I-Gel"  alt="Dream and Rest I-Gel Mattress" >
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>I-Gel</figcaption>
                 </figure>
                 
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="Malibu" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Malibu" >
                     <img src="./assets/Beds/Malibu.png" title="Malibu" alt="Dream and Rest Malibu Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>                  
                     <figcaption>Malibu</figcaption>
                 </figure>
                 
-                <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="Siesta" >
+                <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Siesta" >
                     <img src="./assets/Beds/Siesta.png" title="Siesta" alt="Dream and Rest Siesta Mattress" >
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Siesta</figcaption>
@@ -226,9 +228,7 @@
         <!-- <div class="tFirst"></div>
         <div class="tSecond"></div> -->
         <svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" >
-                <!-- <polygon points="0,0 50,100 50,00" />
-                <polygon points="100,0 50,100 50,0" />   -->
-                <polygon points="0,0 50,100 50,100 100,0"/>
+            <polygon points="0,0 50,100 50,100 100,0"/>
         </svg>
     </div>
 
@@ -269,6 +269,10 @@
         
     </div>
         
+
+    <div class="container-fluid" id="ABFooter">
+        <p>Designed by: <a href="https://www.abonlinemarketing.com/" target="_blank">A&B Marketing</a></p>
+    </div>    
 
         <a id="back-to-top" href="#" class="btn btn-secondary  back-to-top" role="button" ><img src="./assets/glyphicons-214-arrow-up.png" alt=""> </a>
 
@@ -319,7 +323,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/paralax.min.js"></script>
-    <!-- <script src="js/Modernizr.js"></script> -->
+    <!-- <script src="js/stellar.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 
