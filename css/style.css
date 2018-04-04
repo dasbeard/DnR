@@ -234,13 +234,9 @@
         /* top: -1.5px; */
     }
 
-    #contactUs .contactInfo{
-        text-align: center;
-    }
-
-    #contactUs .contactInfo h5{
-        text-decoration: underline;
-        margin-bottom: .7rem;    
+    #contactUs .sectionTitle h2{
+        position: relative;
+        right: 5px;
     }
 
     #contactUs .sectionTitle h2 a{
@@ -248,14 +244,51 @@
         top: -2px;
         margin-left: 10px;
     }
+    
+    #contactUs .contactInfo{
+        text-align: center;
+    }
+    
+    #contactUs .contactInfo h5{
+        text-decoration: underline;
+        margin-bottom: .7rem;    
+    }
+
 
     #contactUs .contactInfo p{
         margin-bottom: .2rem;
     }
 
     #contactUs .contactInfo .emailUs{
+        margin-bottom: .3rem;
         position: relative;
-        top: 2.5rem;
+        top: 1rem;
+    }
+
+    #contactUs .contactInfo button{
+        position: relative;
+        left: calc(50% - 50px);
+        width: auto;
+        transition: transform 300ms;
+    }
+
+    #contactUs .contactInfo .hide{
+        display: none;
+        position: relative;
+        left: calc(50% - 90px);        
+        top: -50px;
+        height: 65px;
+        margin-bottom: -65px;
+        width: 180px;
+    }
+
+    .emailUsBtn{
+        left: calc(50% - 75px) !important;
+        width: 150px !important;
+        top: -25px;
+        /* height: 65px;         */
+        transform: scale(1.2);
+        font-size: .9rem;
     }
 
     #contactUs iframe{

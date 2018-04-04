@@ -47,10 +47,6 @@ $(document).ready(function(){
         
 });
 
-//   -=-=-=-=-=-=-=-=-=-=-=-=-=-= Not Working on Mobile Yet -=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-
-
 
 var touch = window.navigator.userAgent.toLowerCase().includes("mobi");
 $('.img-holder').imageScroll({
@@ -327,3 +323,22 @@ $('#mattressModal').on('show.bs.modal', function (event) {
         
     });
     /* ===^^^ Mattress Modal ^^^=== */
+
+
+    new ClipboardJS('.emailUs');
+
+
+    $('.copyTrigger ').click(function(){
+		var $this = $(this);
+		$this.toggleClass('emailUsBtn');
+		if($this.hasClass('emailUsBtn')){
+            $this.html('Email Copied </br> to Clipboard').stop();			
+            $('#contactUs .contactInfo .hide').css('display', 'flex');
+        // } else {
+            setTimeout(() => {
+                $this.text('Email Us').toggleClass('emailUsBtn');
+            $('#contactUs .contactInfo .hide').css('display', 'none');
+                
+            }, 1500);
+		}
+	});
