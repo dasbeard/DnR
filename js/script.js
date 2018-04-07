@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-    
+    // ===== Lazy Load the images for faster performance =====
     $("img.lazyload").lazyload();
 
     /*======= Navigation Scroll ========*/
@@ -25,9 +25,7 @@ $(document).ready(function(){
 
 
 
-    $(window).scroll(function () {
-        // console.log($(this).scrollTop() );
-        
+    $(window).scroll(function () {        
            if ($(this).scrollTop() > 450) {
                $('#back-to-top').fadeIn();
            } else {
@@ -52,7 +50,7 @@ $(document).ready(function(){
 
 var touch = window.navigator.userAgent.toLowerCase().includes("mobi");
 $('.img-holder').imageScroll({
-    // imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+    imageAttribute: (touch === true) ? 'image-mobile' : 'image',
     touch: touch,
   });
 
