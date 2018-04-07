@@ -509,7 +509,12 @@
 @media(max-width: 767.98px){
     .modalTop ul li{
         font-size: .8rem;    
-    }      
+    }  
+    
+    #mainImg{
+        /* max-height: 40vh; */
+        margin-bottom: 4rem;        
+    }
 }
     
     

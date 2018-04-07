@@ -1,9 +1,9 @@
 // Google API Key:  AIzaSyBsfCq6i7bDkV-mtzCuqn8tJGKe9GkErX0
-$("img.lazyload").lazyload();
 
 
 $(document).ready(function(){
-
+    
+    $("img.lazyload").lazyload();
 
     /*======= Navigation Scroll ========*/
     $("a[href='#beds']").click(function() {
