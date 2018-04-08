@@ -335,10 +335,10 @@ $('#mattressModal').on('show.bs.modal', function (event) {
             $this.html('Email Copied </br> to Clipboard').stop();			
             $('#contactUs .contactInfo .hide').css('display', 'flex');
         // } else {
-            setTimeout(() => {
+
+            setTimeout(function(){
                 $this.text('Email Us').toggleClass('emailUsBtn');
-            $('#contactUs .contactInfo .hide').css('display', 'none');
-                
+                $('#contactUs .contactInfo .hide').css('display', 'none');
             }, 1500);
 		}
-	});
+    });

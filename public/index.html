@@ -2,49 +2,41 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116935634-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-116935634-1');
+        gtag('config', 'UA-116935634-1');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name=”description” content=”High qualify mattresses at affordable prices. Lowest Prices around”>
-    <meta name="keywords" content="Mattress, Mattresses, Cheap mattress, low price mattress, mattress for sale, Dream and rest, Dream and rest Mattress, Affordable mattress, Used Mattress">
+    <meta name="keywords" content="Mattress, Mattresses, Cheap mattress, low price mattress, mattress for sale, Dream and rest, Dream and rest Mattress, Affordable mattress, Used Mattress, bed, beds, dream and rest bed, , dream and rest beds">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#a69499">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Dream and Rest</title>
 
-    <!-- ============= Bootstrap CSS ============== -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <!-- ^^^^^======== Bootstrap CSS ========^^^^^^ -->
-
-
     <!-- ============= Google Fonts ============== -->
-    <link href="https://fonts.googleapis.com/css?family=Farsan|Montserrat|Pacifico|Dancing+Script|Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Dancing+Script" rel="stylesheet">
     <!-- ^^^^^======== Google Fonts ========^^^^^^ -->
 
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <div class="container-fluid background">
-
-        <!-- <div class="alert alert-danger fade show text-center" role="alert">
-            <strong>Marketing Message Here!</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div> -->
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <a class="navbar-brand" href="#">
                 <img src="./assets/Logo.png" class="d-inline-block align-top" alt="">
@@ -75,7 +67,6 @@
             </div>
         </nav>
         
-        <!-- class="container-fluid justify-content-center" -->
         <div id="mainImg">
             
             <div class="imgText">
@@ -83,7 +74,7 @@
                 <h4>At Dream and Rest Inc. your sleep is priceless</h4>
             </div>
 
-            <div class="img-holder" data-image="./assets/mattress-scale.png" data-width="1500" data-height="996"></div>
+            <div class="img-holder" data-image="./assets/mattress-scale2.png" data-image-mobile="./assets/mattress-mobile.png" data-width="1300" data-height="975"></div>
 
         </div>
 
@@ -95,25 +86,25 @@
 
             <div class="row mattCollection">
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Belleza Classica" >
-                    <img src="./assets/Beds/Belleza-Classica.png" title="Belleza Classica" alt="Dream and Rest Belleza Classica Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Belleza-Classica.png" src="./assets/Beds/Belleza-Classica.png" title="Belleza Classica" alt="Dream and Rest Belleza Classica Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Belleza Classica</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Chiro Care" >
-                        <img src="./assets/Beds/Chiro-Care.png" title="Chiro Care" alt="Dream and Rest Chiro Care Mattress">
-                        <figcaption class="clickMe">Click For More Info</figcaption>
+                    <img class="lazyload" data-src="./assets/Beds/Chiro-Care.png" src="./assets/Beds/Chiro-Care.png" title="Chiro Care" alt="Dream and Rest Chiro Care Mattress">
+                    <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Chiro Care</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Comfort Haven" >
-                    <img src="./assets/Beds/Comfort-Haven.png" title="Comfort Haven" alt="Dream and Rest Comfort Haven Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Comfort-Haven.png" src="./assets/Beds/Comfort-Haven.png" title="Comfort Haven" alt="Dream and Rest Comfort Haven Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Comfort Haven</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Hercules" >
-                    <img src="./assets/Beds/Hercules.png" title="Hercules" alt="Dream and Rest Hercules Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Hercules.png" rc="./assets/Beds/Hercules.png" title="Hercules" alt="Dream and Rest Hercules Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Hercules</figcaption>
                 </figure>
@@ -122,25 +113,25 @@
 
             <div class="row mattCollection">
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Lumbar Support" >
-                    <img src="./assets/Beds/Lumbar-Support.png" title="Lumbar Support" alt="Dream and Rest Lumbar Support Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Lumbar-Support.png" src="./assets/Beds/Lumbar-Support.png" title="Lumbar Support" alt="Dream and Rest Lumbar Support Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Lumbar Support</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Hermosa Plush" >
-                    <img src="./assets/Beds/Hermosa-Plush.png" title="Hermosa Plush" alt="Dream and Rest Hermosa Plush Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Hermosa-Plush.png" src="./assets/Beds/Hermosa-Plush.png" title="Hermosa Plush" alt="Dream and Rest Hermosa Plush Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Hermosa Plush</figcaption>
                 </figure>
                 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Natural Element" >
-                    <img src="./assets/Beds/Natural-Element.png" title="Natural Element" alt="Dream and Rest Natural Element Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Natural-Element.png" src="./assets/Beds/Natural-Element.png" title="Natural Element" alt="Dream and Rest Natural Element Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Natural Element</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Slumber Drift" >
-                    <img src="./assets/Beds/Slumber-Drift.png" title="Slumber Drift" alt="Dream and Rest Slumber Drift Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Slumber-Drift.png" src="./assets/Beds/Slumber-Drift.png" title="Slumber Drift" alt="Dream and Rest Slumber Drift Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Slumber Drift</figcaption>
                 </figure>
@@ -149,25 +140,25 @@
                 
             <div class="row mattCollection justify-content-center">
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="I-Gel" >
-                    <img src="./assets/Beds/I-Gel.png" title="I-Gel"  alt="Dream and Rest I-Gel Mattress" >
+                    <img class="lazyload"  data-src="./assets/Beds/I-Gel.png" src="./assets/Beds/I-Gel.png" title="I-Gel" alt="Dream and Rest I-Gel Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>I-Gel</figcaption>
                 </figure>
                 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Malibu" >
-                    <img src="./assets/Beds/Malibu.png" title="Malibu" alt="Dream and Rest Malibu Mattress">
+                    <img class="lazyload"  data-src="./assets/Beds/Malibu.png" src="./assets/Beds/Malibu.png" title="Malibu" alt="Dream and Rest Malibu Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>                  
                     <figcaption>Malibu</figcaption>
                 </figure>
                 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Siesta" >
-                    <img src="./assets/Beds/Siesta.png" title="Siesta" alt="Dream and Rest Siesta Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Siesta.png" src="./assets/Beds/Siesta.png" title="Siesta" alt="Dream and Rest Siesta Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Siesta</figcaption>
                 </figure>
 
                 <figure class="col" data-toggle="modal" data-target="#mattressModal" data-name="Institution" >
-                    <img src="./assets/Beds/Institution.png" title="Institution" alt="Dream and Rest Institution Mattress" >
+                    <img class="lazyload" data-src="./assets/Beds/Institution.png" src="./assets/Beds/Institution.png" title="Institution" alt="Dream and Rest Institution Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Institution</figcaption>
                 </figure>
@@ -176,13 +167,13 @@
 
             <div class="row mattCollection justify-content-center">
                 <figure class="col-3" data-toggle="modal" data-target="#mattressModal" data-name="Youth" >
-                        <img src="./assets/Beds/Youth.png" title="Youth" alt="Dream and Rest Youth Mattress">
-                        <figcaption class="clickMe">Click For More Info</figcaption>
+                    <img class="lazyload"  data-src="./assets/Beds/Youth.png" src="./assets/Beds/Youth.png" title="Youth" alt="Dream and Rest Youth Mattress">
+                    <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Youth</figcaption>
                 </figure>
 
                 <figure class="col-6" data-toggle="modal" data-target="#mattressModal" data-name="Mattress Size Chart" >
-                    <img src="./assets/mattressChart.png" title="Mattress Chart" alt="Dream and Rest Mattress Chart Image" >
+                    <img class="lazyload"  data-src="./assets/mattressChart.png" title="Mattress Chart" alt="Dream and Rest Mattress Chart Mattress">
                     <figcaption class="clickMe">Click For More Info</figcaption>
                     <figcaption>Mattress Size Chart</figcaption>
                 </figure>
@@ -257,7 +248,6 @@
 
             <div class="col-md order-md-2 ">
                 <p><a class="emailUs d-sm-none" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p>
-                <!-- <p><a class="emailUs visable-lg d-lg-none d-xl-block" href="mailto:catyp_27@yahoo.com" target="_top">Email Us</a></p> -->
 
                 <button class="btn emailUs copyTrigger d-none d-sm-block" data-clipboard-text="catyp_27@yahoo.com">
                         Email Us
@@ -346,19 +336,12 @@
 
 
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/paralax.min.js"></script>
-    <!-- <script src="js/clipboard.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-
-    <script src="js/script.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="paralax.min.js"></script>
+    <script src="clipboard.js"></script>
+    <script src="lazyload.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-<!-- Where quality, comfort, and dreams are made -->
