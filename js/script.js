@@ -48,11 +48,11 @@ $(document).ready(function(){
 });
 
 
-var touch = window.navigator.userAgent.toLowerCase().includes("mobi");
-$('.img-holder').imageScroll({
-    imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-    touch: touch,
-  });
+// var touch = window.navigator.userAgent.toLowerCase().includes("mobi");
+// $('.img-holder').imageScroll({
+//     imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+//     touch: touch,
+//   });
 
 
 

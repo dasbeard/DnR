@@ -17,17 +17,15 @@
 
 .background{
     background-color: var(--color4);
-    /* box-shadow: inset 0px 18px 50px -5px var(--color5); */
     padding: 0;
     z-index: 0 !important;
-    min-height: 98.5vh;
+    /* min-height: 98.5vh; */
 } 
 
 
 /* ===== Navigation Bar ===== */
 .navbar{
     padding-bottom: 0;
-    /* height: 200px; */
 }
 
 .navbar-nav li{
@@ -49,28 +47,26 @@
 
 /* ===== Main Content ===== */
     #mainImg{
-        max-height: 80vh;
-        margin-bottom: 2rem;
-
-        animation: fadeIn 1.5s;
-        -moz-animation: fadeIn 1.5s; /* Firefox */
-        -webkit-animation: fadeIn 1.5s; /* Safari and Chrome */
-        -o-animation: fadeIn 1.5s; /* Opera */
-    }
-
-    #mainImg .img-holder {
-        position: relative;
-        top: -160px;
-        margin: 0;
-        padding: 0;
-        
+    height: 80vh;
+    background-image: url('../assets/mattress-scale2.png');
+    position: relative;
+    opacity: 0.95;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0 !important;
+    animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s; 
     }
 
     #mainImg .imgText{
-        z-index: 9;
+        z-index: 90 !important;
         max-height: 160px;
         position: relative;
-        /* top: -27rem; */
+        /* top: -78vh; */
         font-family: 'Dancing Script', cursive;
         color: var(--color4);
         text-shadow: 4px 4px 15px #000000;
@@ -91,9 +87,9 @@
 
     #mainImg .imgText {
         animation: titleFadeIn 1.5s;
-        -moz-animation: titleFadeIn 1.5s; /* Firefox */
-        -webkit-animation: titleFadeIn 1.5s; /* Safari and Chrome */
-        -o-animation: titleFadeIn 1.5s; /* Opera */
+        -moz-animation: titleFadeIn 1.5s;
+        -webkit-animation: titleFadeIn 1.5s;
+        -o-animation: titleFadeIn 1.5s; 
     }
     @keyframes titleFadeIn {
         from {
@@ -145,42 +141,8 @@
     }
 
 
-
-
-
-
-
-
 /* =====^^^ Main Content ^^^===== */
     
-
-.textOutline{
-        text-shadow: 1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000,
-        0px 1px 0 #000,
-        0px -1px 0 #000,
-        -1px 0px 0 #000,
-        1px 0px 0 #000,
-        1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000,
-        0px 1px 0 #000,
-        0px -1px 0 #000,
-        -1px 0px 0 #000,
-        1px 0px 0 #000,
-        1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000,
-        1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
-    }
-
 .sectionTitle{
     text-align: center;
     /* text-decoration: underline; */
@@ -192,6 +154,7 @@
 
 /* ===== Mattress Collection ===== */
     #beds{
+        padding-top: 2rem;
         margin-bottom: 4rem;    
         animation: fadeIn 2.5s;
         -moz-animation: fadeIn 2.5s;
@@ -640,11 +603,6 @@
     .modalTop ul li{
         font-size: .8rem;    
     }  
-    
-    #mainImg{
-        /* max-height: 40vh; */
-        margin-bottom: 4rem;        
-    }
 }
     
     
@@ -655,7 +613,8 @@
     
     #mainImg{
         max-height: 40vh;
-        margin-bottom: 4rem;        
+        background-attachment: scroll;
+
     }
     
     #mainImg .imgText h2{
